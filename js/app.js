@@ -4,9 +4,9 @@ $(function() {
     $('#btn').on('click', function(){
         $.ajax({
             //リクエスト先のURLを設定
-            url: "http:zipcloid.ibsnet.co.jp/api/search?zipcode=" + $("#zipcode").val(),
+            url: "http:zipcloid.ibsnet.co.jp/api/search?zipcode=" + $('#zipcode').val(),
             //レスポンスのデータ形式を設定
-            dateType : "jsonp",
+            dateType : 'jsonp',
         }).done(function(data){
             //通信が成功したときの処理
             if(data.results){
@@ -24,7 +24,7 @@ $(function() {
 
 function setData(data){
     //取得データを各HTML要素に代入
-    $("#prefecture").val(data.address1);
-    $("#city").val(data.address2);
-    $("#address").val(data.address3);
+    $('#prefecture').val(data.address1);
+    $('#city').val(data.address2);
+    $('#address').val(data.address3);
 }
