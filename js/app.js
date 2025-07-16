@@ -4,7 +4,7 @@ $(function() {
     $('#btn').on('click', function(){
         $.ajax({
             //リクエスト先のURLを設定
-            url: "http:zipcloid.ibsnet.co.jp/api/search?zipcode=" + $('#zipcode').val(),
+            url: "https://zipcloud.ibsnet.co.jp/api/search?zipcode=" + $('#zipcode').val(),
             //レスポンスのデータ形式を設定
             dateType : 'jsonp',
         }).done(function(data){
