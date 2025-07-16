@@ -6,7 +6,7 @@ $(function() {
             //リクエスト先のURLを設定
             url:"https://zipcloud.ibsnet.co.jp/api/search?zipcode=" + $('#zipcode').val(),
             //レスポンスのデータ形式を設定
-            dateType:'jsonp',
+            dataType:'jsonp',
         }).done(function(data){
             //通信が成功したときの処理
             if(data.results){
