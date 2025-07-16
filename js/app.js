@@ -11,7 +11,7 @@ $(function() {
             //通信が成功したときの処理
             if(data.results){
                 //データが取得できたとき、setData関数を呼び出す
-                setData(data.results[0]);
+                setData(data.results[1]);
             }else{
                 alert("該当するデータが見つかりませんでした");
             }
